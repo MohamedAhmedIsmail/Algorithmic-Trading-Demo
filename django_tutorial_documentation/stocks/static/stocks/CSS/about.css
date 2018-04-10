@@ -1,0 +1,53 @@
+.about
+{
+	background: url('../algo.jpg') no-repeat top center;
+	height: 1000px;
+
+}
+.header
+{
+	margin-top: 70px;
+}
+.header h1
+{
+	color:white;
+	font-size: 40px;
+}
+.about .text p
+{
+	margin-top: 100px;
+	margin-left:10px;
+ 	font-size: 20px;
+ 	color: white;
+ 	width:700px;
+ 	float:left;
+}
+.about .img img
+{
+	margin-top: 30px;
+	border-radius: 50%;
+}
+.about h2
+{
+	color:white;
+	margin-left: 10px;
+}
+.about .benefits
+{
+	width:670px;
+	float:left;
+}
+.about .benefits ul
+{
+	margin-top: 20px;
+	font-size: 20px;
+	color: white;
+}
+.about .benefits li
+{
+	margin-top: 5px;
+}
+.about .img2 img
+{
+	border-radius: 50%;
+}

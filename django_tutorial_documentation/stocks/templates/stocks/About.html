@@ -1,0 +1,36 @@
+{% extends 'stocks/content.html' %}
+{% load static %}
+
+{% block about %}
+<div class="about">
+	<div class="header">
+		<h1 class="text-center">About Algorithmic Trading</h1>	
+	</div>
+	<div class="text text-center">
+		<p>Algorithmic trading is the process of using computers programmed to follow a defined set of instructions (an algorithm) for placing a trade in order to generate profits at a speed and frequency that is impossible for a human trader. The defined sets of rules are based on timing, price, quantity or any mathematical model. Apart from profit opportunities for the trader, algo-trading makes markets more liquid and makes trading more systematic by ruling out the impact of human emotions on trading activities. </p>
+	</div>
+	<div class="img">
+		<img src="{%static "stocks/Algorthmic-Trading.jpg" %}">
+	</div>
+	<h2>Benefits Of Algorithmic Trading:</h2>
+	<div class="benefits">
+		<ul class="lst">
+			<li>trades executed at the best possible prices</li>
+			<li>instant and accurate trade order placement</li>
+			<li>trades timed correctly and instantly, to avoid significant price changes</li>
+			<li>reduced transaction costs</li>
+			<li>simultaneous automated checks on multiple market conditions</li>
+			<li>reduced risk of manual errors in placing the trades</li>
+			<li>can be backtested, on available historical and real-time data, to see if it is a viable trading strategy</li>
+			<li>reduced possibility of mistakes by human traders based on emotional and psychological factors</li>
+		</ul>
+	</div>
+	<div class="img2">
+		<img src="{%static "stocks/800(2).jpg" %}">
+	</div>
+
+	
+</div>
+	
+
+{% endblock %}

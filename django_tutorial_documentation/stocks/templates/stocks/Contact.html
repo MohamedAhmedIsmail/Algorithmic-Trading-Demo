@@ -1,0 +1,68 @@
+{% extends 'stocks/content.html' %}
+{% block contact %}
+<div class="container cont">
+	<div class="box">
+		<div class="row">
+			<div class="col-lg-12">
+				<hr>
+				<h2 class="intro-text text-center">Contact <strong>Algo Trading</strong></h2>
+				<hr>
+			</div>
+			<div class="col-md-8">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d110502.76973624731!2d31.18842371324953!3d30.059469890441957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1523284251956" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="col-md-4">
+				<p>Phone:
+					<strong>123.456.789</strong>
+				</p>
+				<p>Email:
+					<strong><a href="mailto:name@example.com">name@example.com</a></strong>
+				</p>
+				<p>Address:
+					<strong>3481 Melrose Place	
+						<br>Beverly Hills,CA 90210
+					</strong>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="row">
+			<div class="col-lg-12">
+				<hr>
+				<h2 class="intro-text text-center">Contact <strong>Form</strong></h2><hr>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<form>
+					<div class="row">
+						<div class="form-group col-lg-4">
+							<label>Name</label>
+							<input type="text" name="" class="form-control">
+						</div>
+						<div class="form-group col-lg-4">
+							<label>Email</label>
+							<input type="email" name="" class="form-control">
+						</div>
+						<div class="form-group col-lg-4">
+							<label>Phone Number</label>
+							<input type="tel" name="" class="form-control">
+						</div>
+						<div class="form-group col-lg-6">
+							<label>Message</label>
+							<textarea class="form-control" rows="5"></textarea>
+						</div>
+						<div class="form-group col-lg-12">
+							<input type="hidden" name="save" value="contact">
+							<button type="submit" class="btn btn-default">Submit</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

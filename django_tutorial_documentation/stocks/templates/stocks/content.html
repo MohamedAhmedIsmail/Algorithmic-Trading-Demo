@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>my Django App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{%static "stocks/CSS/bootstrap.min.css" %}"/>
+    <link rel="stylesheet" href="{%static "stocks/CSS/font-awesome.min.css" %}"/>
+    <link rel="stylesheet" type="text/css" href="{%static "stocks/CSS/style2.css" %}">
+    <link rel="stylesheet" type="text/css" href="{%static "stocks/CSS/about.css" %}">
+    <link rel="stylesheet" type="text/css" href="{%static "stocks/CSS/default-theme.css" %}">
+    <link rel="stylesheet" type="text/css" href="{%static "stocks/CSS/contact.css" %}">
+   
+    <script src="{%static "stocks/js_libs/jquery-3.3.1.min.js" %}"></script>
+    <script src="{%static "stocks/js_libs/vue.js" %}"></script>
+    <script src="{%static "stocks/js_libs/Chart.min.js" %}"></script>
+    {% comment %}<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.5"></script>{% endcomment %}
+    <script src="{%static "stocks/js_libs//vue-resource@1.5.0.js" %}"></script>
+    <script src="{%static "stocks/JS/bootstrap.min.js" %}"></script>
+
+    
+</head>
+
+<body>
+        <!--Start Our Navbar-->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+        <div class="navbar-header">
+        
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ournavbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-only"></span>
+        <span class="icon-only"></span>
+        <span class="icon-only"></span>
+        </button>
+        <a class="navbar-brand hvr-pop hvr-grow-rotate" href="#"><!--<img class="myImage" src="{%static "stocks/logo.gif" %}">-->  Algorithmic<span> Trading</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="ournavbar">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="{% url 'index'%}">Home</a></li>
+            <li><a href="{% url 'About'%}">About</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<span class="caret"></span></a>
+                <ul class="dropdown-menu"role="menu">
+                    <li><a href="#">Programming</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Desktop</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Web Hosting</a></li>
+                </ul>
+            </li>
+        <li><a href="#">Map</a></li>
+        <li><a href="{% url 'Contact'%}">Contact</a></li>
+        </ul>
+        </div>
+        </div>
+        </nav>
+        <!--End Our Navbar-->
+            {% block content %} {% endblock %}
+                
+            {% block about %} {% endblock %} 
+            
+            {% block contact %} {% endblock %}
+
+         <!-- Footer -->
+        <div class="copyright text-center">
+            Copyright &copy; 2018<span> Your Template Name</span>.Inc
+        </div>
+
+     <script src="{%static "stocks/JS/sketch.js"%}"></script>
+     
+</body>
+</html>

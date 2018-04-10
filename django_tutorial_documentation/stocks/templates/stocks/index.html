@@ -1,0 +1,29 @@
+{% extends 'stocks/content.html' %}
+
+{% block content %}
+
+<div class="contain">
+     <div id="app_companies" class="sidebar">
+         <ul id="nav">
+             <li><a href="#" class="selected" v-on:click="getStock" name="EGS65571C019">Madinet Nasr Housing</a></li>
+             <li><a href="#" v-on:click="getStock" name="EGS3C181C012">Cement Suez</a></li>
+             <li><a href="#"  v-on:click="getStock" name="EGS48031C016">Telecom Egypt</a></li>
+             <li><a href="#" v-on:click="getStock" name="EGS33041C012">Oriental Weavers</a></li>
+             <li><a href="#" v-on:click="getStock" name="EGS691S1C011">TMG Holding</a></li>
+         </ul>
+    </div>
+
+
+    <div class="RightSide">
+            <div class="row">
+                <div class="col-lg-6 myFirstCanvas">
+                    <canvas id="line-chart-closePrice"></canvas>
+                    <canvas id="line-chart"></canvas>
+                </div>
+                <div class="col-lg-6 mySecondCanvas">
+                    <canvas id="line-chart-Regression"></canvas>
+                </div>
+            </div>
+        </div>
+</div>
+{% endblock %}
